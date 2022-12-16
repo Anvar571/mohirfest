@@ -2,6 +2,7 @@
 ### BU loyiha ta'limni rivojlantirish bo'yicha 
 ![Mohirfest ](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.NjGmBwpPibDkKMDM3wLXyQHaHa%26pid%3DApi&f=1&ipt=2ef2668056dfa01785287441d0338730c2c3b7f78f4b7beb05f5aa7de425b163&ipo=images)
 
+[test]
 
 ### Loyiha haqida nimalar bo’lishligi.
 Loyiha: Ta’limni rivojlantirish ya’ni sodda va qiziqtirish yo’li orqali ta’limni rivojlantirish 
