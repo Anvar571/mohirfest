@@ -1,3 +1,5 @@
+import Header from './components/header/Header';
+import Home from './components/home/Home';
 
 function App() {
   return (
@@ -7,7 +9,8 @@ function App() {
           <h2>Menyular</h2>
         </div>
         <div className="col-md-9">
-          <h2>Qismlar</h2>
+          <Header />
+          <Home />
         </div>
       </div>
     </div>
