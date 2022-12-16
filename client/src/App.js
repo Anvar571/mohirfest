@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="row">
         <div className="col-md-3">
-          <h2>Menyular</h2>
+          <Menu/>
         </div>
         <div className="col-md-9">
           <Header />
