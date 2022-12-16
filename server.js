@@ -19,6 +19,8 @@ mongoose.connect(dbUrl, {
     console.log("db connect successfull");
 })
 
+app.use("/api", require("./routers/authRoute"));
+
 app.listen(port, () => {
     console.log(`listen on port ${port}`);
 })
