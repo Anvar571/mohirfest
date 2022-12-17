@@ -17,13 +17,22 @@ const Register = () => {
     }
 
     const handleBtn =(e) => {
+<<<<<<< HEAD
         e.preventDefault();
         try {
+=======
+        try {
+            e.preventDefault();
+>>>>>>> 6622c8885a51c1058b737c33b8d5312fb180437f
             const user = JSON.stringify(userData)
 
             localStorage.setItem("token", user)
             
+<<<<<<< HEAD
             navigate("/")
+=======
+            window.location.href = "/login"
+>>>>>>> 6622c8885a51c1058b737c33b8d5312fb180437f
         } catch (error) {
             return console.log(error);
         }
@@ -31,7 +40,11 @@ const Register = () => {
 
     useEffect(() => {
         if (localStorage.getItem("token")) navigate("/")
+<<<<<<< HEAD
     }, [])
+=======
+    }, [navigate])
+>>>>>>> 6622c8885a51c1058b737c33b8d5312fb180437f
 
     return (
         <section className="vh-100" style={{ backgroundColor: '#eee' }}>
@@ -43,7 +56,11 @@ const Register = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                                         <p className="text-center h1 fw-bold mb-2 mx-1 mx-md-4 mt-4">Sign up</p>
+<<<<<<< HEAD
                                         <form className="mx-1 mx-md-4">
+=======
+                                        <form className="mx-1 mx-md-4" onSubmit={handleBtn}>
+>>>>>>> 6622c8885a51c1058b737c33b8d5312fb180437f
                                             <div className="d-flex flex-row align-items-center mb-4">
                                                 <i className="fas fa-user fa-lg me-3 fa-fw" />
                                                 <div className="form-outline flex-fill mb-0">
@@ -122,4 +139,8 @@ const Register = () => {
     )
 }
 
+<<<<<<< HEAD
 export default Register
+=======
+export default Register
+>>>>>>> 6622c8885a51c1058b737c33b8d5312fb180437f
