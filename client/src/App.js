@@ -17,6 +17,8 @@ import MaslahatlarPage from "./components/maslahatlar/MaslahatlarPage";
 import ProfilePage from "./components/profile/ProfilePage";
 >>>>>>> 6622c8885a51c1058b737c33b8d5312fb180437f
 
+// new pages add
+
 function App() {
   const token = localStorage.getItem("token")
   return (
