@@ -12,13 +12,15 @@ import Logo from "../../images/siteLogo.svg";
 const Menu = () => {
      return (
           <div className="d-flex shadow-sm flex-column vh-100" >
-               <div className="mb-3 px-3 mt-4 d-flex align-items-center">
+               <Link to="/" className=" mb-3 px-3 mt-4 d-flex align-items-center"
+               style={{textDecoration: "none"}}>
                     <img src={Logo} className="fs-4 me-3" alt="logo site"/>
-                    <h1 className=''>Ilm ol</h1>
-               </div>
+                    <h1 className='' 
+                    style={{color:"#000"}}>Ilm ol</h1>
+               </Link>
                <ul className="nav flex-column">
                     <li className="nav-item d-flex py-3">
-                         <Link className="nav-link myNavLink d-flex align-content-center" to="/home">
+                         <Link className="nav-link myNavLink d-flex align-content-center" to="/">
                               <BsHouseDoor />
                               <span className="px-3">Bosh sahifa</span>
                          </Link>
@@ -54,6 +56,7 @@ const Menu = () => {
                          </Link>
                     </li>
                </ul>
+
           </div>
      )
 }

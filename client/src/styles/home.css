@@ -1,43 +1,40 @@
-.myNavLink {
-     font-weight: 500;
-     font-size: 18px;
-     line-height: 21px;
-     letter-spacing: 0.016em;
-     color: #00140E;
-}
-.myNavLink:hover {
-     
+.home .col-md-6 {
+     width: 35%;
+     height: 160px;
+     border-radius: 23px;
+     padding: 20px;
+     color: #fff;
+     background-color: rgb(40, 67, 157);
 }
 
-.navSearchForm {
-     margin-left: 25px;
+.home .col-md-3 {
+     height: 160px;
+     border-radius: 23px;
+     padding: 20px;
+     color: #000;
+     background-color: rgb(255, 255, 157);
 }
 
-.mySearchInput {
-     border: 1px solid rgb(255, 255, 255);
-     background: #FFFFFF;
-     border-radius: 8px;
-     padding: 10px 15px;
-     width: 300px;
-     display: flex;
-     align-items: center;
-}
-.mySearchInput .myInput {
-     border: none;
-     outline: none;
-     width: auto;
-     text-indent: 10px;
-     color: #AEB6CF;
-     font-weight: 400;
-     font-size: 15px;
-     line-height: 24px;
-     letter-spacing: 1.2px;
+.home .col3 {
+     height: 160px;
+     border-radius: 23px;
+     padding: 20px;
+     color: #000;
+     background-color: rgb(225, 245, 253);
 }
 
-.hero-section {
-     background-color: #F2F5FD;
-     height: 100vh;
+/* ============= home list */
+ul {
+     padding: 0;
+     margin: 0;
 }
-.profileName {
-     margin-right: 15px;
+
+.home_about_li {
+     list-style-type: none;
+     font-size: 20px;
+     padding: 15px;
+     margin-top: 10px !important;
+     display: block;
+     border-bottom: 4px solid yellowgreen;
+     border-radius: 7px;
 }
