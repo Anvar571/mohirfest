@@ -10,6 +10,8 @@ import NewsPage from "./components/news/NewsPage";
 import MaslahatlarPage from "./components/maslahatlar/MaslahatlarPage";
 import ProfilePage from "./components/profile/ProfilePage";
 
+// new pages add
+
 function App() {
   const token = localStorage.getItem("token")
   return (
