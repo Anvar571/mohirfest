@@ -31,10 +31,10 @@ const Header = () => {
                     </div>
                     <div className="navSearchForm">
                          <form>
-                              <div className="mySearchInput" style={{position: "relative"}}>
-                                   <input className="myInput w-100 form-control" 
-                                   type="text" placeholder="Search tasks" style={{border: "1px solid #ddd"}} />
-                                   <BsSearch style={{position: "absolute", right:"20px"}}/>
+                              <div className="mySearchInput" style={{ position: "relative" }}>
+                                   <input className="myInput w-100 form-control"
+                                        type="text" placeholder="Search tasks" style={{ border: "1px solid #ddd" }} />
+                                   <BsSearch style={{ position: "absolute", right: "30px" }} />
                               </div>
                          </form>
                     </div>
