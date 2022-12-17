@@ -30,8 +30,8 @@ function App() {
               <Route exact path="/register" element={<Register />} />
 
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/topshiriqlar" element={<Tasks/>}/>
-              <Route path="/topshiriqlar/:id" element={<Yonalish/>}/>
+              <Route path="/topshiriqlar/" element={<Tasks/>}/>
+                <Route path="/topshiriqlar/:id" element={<Yonalish/>}/>
 
               <Route path="/yangiliklar" element={<NewsPage/>}/>
               <Route path="/maslahatlar" element={<MaslahatlarPage/>}/>

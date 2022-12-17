@@ -4,13 +4,15 @@ import {BsArrowLeft} from "react-icons/bs";
 
 const Yonalish = () => {
     const { id } = useParams()
+    const component = () => require(`./${id}`).default;
+    
     return (
         <div>
             <Link to="/topshiriqlar" className='' >
                 <BsArrowLeft />
                 <span>ortga</span>
             </Link>
-            <h1>{id.toUpperCase()} yo'nalish bo'yicha topshiriqlar</h1>
+            {React.createElement(component())}
         </div>
     )
 }
