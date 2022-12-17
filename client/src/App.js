@@ -4,13 +4,14 @@ import Login from "./pages/login";
 import Register from "./pages/register";
 
 function App() {
-  const token = localStorage.getItem("firstToken")
+  const token = localStorage.getItem("token")
   return (
     <Router>
       <div className="App">
         <Routes>
           <Route path="/" element={token ? <Home/> : <Login/>}/>
           <Route exact path="/register" element={<Register/>}/>
+          <Route exact path="/login" element={<Login/>}/>
         </Routes>
     </div>
     </Router>

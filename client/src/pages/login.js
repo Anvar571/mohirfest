@@ -1,23 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import imgUrl from "../images/draw1.webp"
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
     const initialState = { email: '', password: "" }
     const [userData, setUserData] = useState(initialState);
     const { email, password } = userData;
+    const navigate = useNavigate();
 
     const handleInput = (e) => {
         const {name, value} = e.target
         setUserData({...userData, [name]:value})
     }
-    const user = localStorage.getItem("user")
+
+    
     const handleBtn = (e) => {
         e.preventDefault();
         try {
-            const {email, password} = user;
-            if (user.length === 0 && password.length === 0){
-
-            }
+            const user = JSON.parse(localStorage.getItem("token"))
+            if (user.email !== email) return alert("Email and password is invalid")
+            if (password !== user.password) return alert("Email and password is invalid")
+            alert("Login success")
+            navigate("/");
         } catch (error) {
             return alert(error.message)
         }
