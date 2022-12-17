@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProfilePage = () => {
   return (
-    <div className="py-4">
+    <div className="py-4 ">
       <div className="text-center mb-5">
         <h3>Profilni tahrirlash</h3>
       </div>

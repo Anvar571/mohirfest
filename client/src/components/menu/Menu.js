@@ -18,7 +18,7 @@ const Menu = () => {
                </div>
                <ul className="nav flex-column">
                     <li className="nav-item d-flex py-3">
-                         <Link className="nav-link myNavLink d-flex align-content-center" to="/">
+                         <Link className="nav-link myNavLink d-flex align-content-center" to="/home">
                               <BsHouseDoor />
                               <span className="px-3">Bosh sahifa</span>
                          </Link>

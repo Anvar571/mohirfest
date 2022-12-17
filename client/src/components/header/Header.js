@@ -12,7 +12,7 @@ const Header = () => {
      const [dateState, useDateState] = useState(new Date());
      return (
           <div>
-               <div className="container d-flex my-4 justify-content-around ">
+               <div className="container d-flex my-4 justify-content-around border-bottom pb-4">
                     <div className="d-flex flex-column">
                          <h4>Salom <WelcomeUser name="Jahongir" /></h4>
                          <span>

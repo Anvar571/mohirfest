@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import imgUrl from "../images/draw1.webp";
 import {useNavigate} from "react-router-dom"
+import valid from '../utils/vaildation';
 
 const Register = () => {
     const initialState = {
@@ -19,22 +20,39 @@ const Register = () => {
     const handleBtn =(e) => {
         try {
             e.preventDefault();
-            const user = JSON.stringify(userData)
+            const date = valid(userData)
+            if (date.errLength === 0){
+                const user = JSON.stringify(userData)
+    
+                localStorage.setItem("access", user)
 
-            localStorage.setItem("token", user)
-            
-            window.location.href = "/login"
+                window.location.href = "/login"
+            }else {
+                if (date.errMsg.fullname) {
+                    alert(date.errMsg.fullname)
+                }else if (date.errMsg.username){
+                    alert(date.errMsg.username)
+                }else if (date.errMsg.email){
+                    alert(date.errMsg.email)
+                }else if (date.errMsg.password){
+                    alert(date.errMsg.password)
+                }else if (date.errMsg.cf_password){
+                    alert(date.errMsg.cf_password)
+                }else {
+                    alert("Fill out the form")
+                }
+            }
         } catch (error) {
-            return console.log(error);
+            return alert(error+"");
         }
     }
 
     useEffect(() => {
-        if (localStorage.getItem("token")) navigate("/")
+        if (localStorage.getItem("token")) navigate("/login")
     }, [navigate])
 
     return (
-        <section className="vh-100" style={{ backgroundColor: '#eee' }}>
+        <section className="vh-100" style={{ backgroundColor: '#eee', }}>
             <div className="container h-100">
                 <div className="row d-flex justify-content-center align-items-center h-100">
                     <div className="col-lg-12 col-xl-11">

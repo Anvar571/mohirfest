@@ -17,11 +17,13 @@ const Login = () => {
     const handleBtn = (e) => {
         e.preventDefault();
         try {
-            const user = JSON.parse(localStorage.getItem("token"))
+            const user = JSON.parse(localStorage.getItem("access"))
             if (user.email !== email) return alert("Email and password is invalid")
             if (password !== user.password) return alert("Email and password is invalid")
             alert("Login success")
-            navigate("/");
+            localStorage.removeItem("access")
+            localStorage.setItem("refresh", JSON.stringify(user))
+            navigate("/home");
         } catch (error) {
             return alert(error.message)
         }

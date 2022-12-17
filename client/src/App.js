@@ -10,10 +10,9 @@ import NewsPage from "./components/news/NewsPage";
 import MaslahatlarPage from "./components/maslahatlar/MaslahatlarPage";
 import ProfilePage from "./components/profile/ProfilePage";
 
-// new pages add
 
 function App() {
-  const token = localStorage.getItem("token")
+  const token = localStorage.getItem("refresh")
   return (
     <Router>
       <div className="">
@@ -24,14 +23,16 @@ function App() {
           <div className="col-9">
             {token && <Header />}
             <Routes>
-              <Route path="/" element={token ?<Home /> : <Register/>} />
+              <Route path="/" element={token ? <Login /> : <Register/>} />
+              <Route path="/home" element={<Home/>}/>
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/register" element={<Register />} />
+
               <Route path="/about" element={<AboutPage />} />
               <Route path="/topshiriqlar" element={<Tasks/>}/>
               <Route path="/yangiliklar" element={<NewsPage/>}/>
               <Route path="/maslahatlar" element={<MaslahatlarPage/>}/>
               <Route path="/profile" element={<ProfilePage/>}/>
-              <Route exact path="/register" element={<Register />} />
-              <Route exact path="/login" element={<Login />} />
             </Routes>
           </div>
         </div>
