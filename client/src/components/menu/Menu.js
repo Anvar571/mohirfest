@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/header.css';
+import '../../styles/home.css';
 import HomeMenuIcon from '../../images/home-icon.svg';
 import BookMenuIcon from '../../images/book-icon.svg';
 import PayMenuIcon from '../../images/payout-icon.svg';
@@ -8,9 +8,9 @@ import SettingsMenuIcon from '../../images/settings-icon.svg';
 
 const Menu = () => {
      return (
-          <div className="d-flex flex-column px-4 py-3">
+          <div className="d-flex flex-column">
                <div className="mb-3">
-                    <span className="fs-3">Logo</span>
+                    <span className="fs-4">Logo</span>
                </div>
                <ul class="nav flex-column">
                     <li class="nav-item d-flex py-3">

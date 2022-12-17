@@ -1,0 +1,37 @@
+.myNavLink {
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 21px;
+     letter-spacing: 0.016em;
+     color: #00140E;
+}
+.navSearchForm {
+     margin-left: 25px;
+}
+.mySearchInput {
+     border: 1px solid rgb(255, 255, 255);
+     background: #FFFFFF;
+     border-radius: 8px;
+     padding: 10px 15px;
+     width: 300px;
+     display: flex;
+     align-items: center;
+}
+.mySearchInput .myInput {
+     border: none;
+     outline: none;
+     width: auto;
+     text-indent: 10px;
+     color: #AEB6CF;
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 24px;
+     letter-spacing: 1.2px;
+}
+.hero-section {
+     background-color: #F2F5FD;
+     height: 100vh;
+}
+.profileName {
+     margin-right: 15px;
+}
