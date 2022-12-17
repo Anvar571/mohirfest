@@ -23,7 +23,7 @@ const Login = () => {
             alert("Login success")
             localStorage.removeItem("access")
             localStorage.setItem("refresh", JSON.stringify(user))
-            navigate("/home");
+            navigate("/");
         } catch (error) {
             return alert(error.message)
         }

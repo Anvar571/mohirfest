@@ -9,6 +9,8 @@ import Tasks from "./components/topshiriq/Tasks";
 import NewsPage from "./components/news/NewsPage";
 import MaslahatlarPage from "./components/maslahatlar/MaslahatlarPage";
 import ProfilePage from "./components/profile/ProfilePage";
+import NotFoudPage from "./pages/notFoundPage";
+import Yonalish from "./components/topshiriq/Yo'nalishlar/Yonalishlar";
 
 
 function App() {
@@ -23,16 +25,18 @@ function App() {
           <div className="col-9">
             {token && <Header />}
             <Routes>
-              <Route path="/" element={token ? <Login /> : <Register/>} />
-              <Route path="/home" element={<Home/>}/>
+              <Route path="/" element={token ? <Home /> : <Register/>} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/register" element={<Register />} />
 
               <Route path="/about" element={<AboutPage />} />
               <Route path="/topshiriqlar" element={<Tasks/>}/>
+              <Route path="/topshiriqlar/:id" element={<Yonalish/>}/>
+
               <Route path="/yangiliklar" element={<NewsPage/>}/>
               <Route path="/maslahatlar" element={<MaslahatlarPage/>}/>
               <Route path="/profile" element={<ProfilePage/>}/>
+              <Route path="*" element={<NotFoudPage/>}/>
             </Routes>
           </div>
         </div>
