@@ -1,33 +1,41 @@
 import React from 'react'
 import '../../styles/home.css';
-import HomeMenuIcon from '../../images/home-icon.svg';
-import BookMenuIcon from '../../images/book-icon.svg';
-import PayMenuIcon from '../../images/payout-icon.svg';
-import SettingsMenuIcon from '../../images/settings-icon.svg';
+import { BsHouseDoor } from "react-icons/bs";
+import { BsUiChecksGrid } from "react-icons/bs";
+import { BsWallet2 } from "react-icons/bs";
+import { BsGear } from "react-icons/bs";
 
 
 const Menu = () => {
      return (
           <div className="d-flex flex-column">
-               <div className="mb-3">
+               <div className="mb-3 px-3">
                     <span className="fs-4">Logo</span>
                </div>
                <ul class="nav flex-column">
                     <li class="nav-item d-flex py-3">
-                         <img src={HomeMenuIcon} alt="Icon" />
-                         <a class="nav-link myNavLink" href="#">Bosh sahifa</a>
+                         <a class="nav-link myNavLink d-flex align-content-center" href="#">
+                              <BsHouseDoor />
+                              <span className="px-3">Bosh sahifa</span>
+                         </a>
                     </li>
                     <li class="nav-item d-flex py-3">
-                         <img src={BookMenuIcon} alt="Icon" />
-                         <a class="nav-link myNavLink" href="#">Topshiriqlar</a>
+                         <a class="nav-link myNavLink d-flex align-content-center" href="#">
+                              <BsUiChecksGrid />
+                              <span className="px-3">Topshiriqlar</span>
+                         </a>
                     </li>
                     <li class="nav-item d-flex py-3">
-                         <img src={PayMenuIcon} alt="Icon" />
-                         <a class="nav-link myNavLink" href="#">Balans</a>
+                         <a class="nav-link myNavLink d-flex align-content-center" href="#">
+                              <BsWallet2 />
+                              <span className="px-3">Balans</span>
+                         </a>
                     </li>
                     <li class="nav-item d-flex py-3">
-                         <img src={SettingsMenuIcon} alt="Icon" />
-                         <a class="nav-link myNavLink" href="#">Sozlamalar</a>
+                         <a class="nav-link myNavLink d-flex align-content-center" href="#">
+                              <BsGear />
+                              <span className="px-3">Sozlamalar</span>
+                         </a>
                     </li>
                </ul>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import SearchIcon from '../../images/search-icon.svg';
+import { useState } from 'react';
 import UserAvatar from '../../images/user-img.png';
+import { BsSearch } from "react-icons/bs";
 import '../../styles/home.css';
 
 function WelcomeUser(props) {
@@ -32,7 +32,7 @@ const Header = () => {
                     <div className="navSearchForm">
                          <form>
                               <div className="mySearchInput">
-                                   <img src={SearchIcon} alt="Icon" />
+                                   <BsSearch />
                                    <input className="myInput" type="text" placeholder="Qidirish" />
                               </div>
                          </form>
