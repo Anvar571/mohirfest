@@ -5,9 +5,14 @@
      letter-spacing: 0.016em;
      color: #00140E;
 }
+.myNavLink:hover {
+     
+}
+
 .navSearchForm {
      margin-left: 25px;
 }
+
 .mySearchInput {
      border: 1px solid rgb(255, 255, 255);
      background: #FFFFFF;
@@ -28,6 +33,7 @@
      line-height: 24px;
      letter-spacing: 1.2px;
 }
+
 .hero-section {
      background-color: #F2F5FD;
      height: 100vh;

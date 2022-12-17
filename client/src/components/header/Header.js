@@ -12,7 +12,7 @@ const Header = () => {
      const [dateState, useDateState] = useState(new Date());
      return (
           <div>
-               <div className="d-flex my-4 justify-content-between">
+               <div className="container d-flex my-4 justify-content-around ">
                     <div className="d-flex flex-column">
                          <h4>Salom <WelcomeUser name="Jahongir" /></h4>
                          <span>
@@ -31,9 +31,10 @@ const Header = () => {
                     </div>
                     <div className="navSearchForm">
                          <form>
-                              <div className="mySearchInput">
-                                   <BsSearch />
-                                   <input className="myInput" type="text" placeholder="Qidirish" />
+                              <div className="mySearchInput" style={{position: "relative"}}>
+                                   <input className="myInput w-100 form-control" 
+                                   type="text" placeholder="Search tasks" style={{border: "1px solid #ddd"}} />
+                                   <BsSearch style={{position: "absolute", right:"20px"}}/>
                               </div>
                          </form>
                     </div>
