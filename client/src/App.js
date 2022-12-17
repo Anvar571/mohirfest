@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import Home from "./pages/home";
+import Login from "./pages/login";
+import Register from "./pages/register";
+=======
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Login from "./pages/login";
 import Register from "./pages/register";
@@ -9,6 +15,9 @@ import Tasks from "./components/topshiriq/Tasks";
 import NewsPage from "./components/news/NewsPage";
 import MaslahatlarPage from "./components/maslahatlar/MaslahatlarPage";
 import ProfilePage from "./components/profile/ProfilePage";
+>>>>>>> 6622c8885a51c1058b737c33b8d5312fb180437f
+
+// new pages add
 
 // new pages add
 
@@ -16,6 +25,15 @@ function App() {
   const token = localStorage.getItem("token")
   return (
     <Router>
+<<<<<<< HEAD
+      <div className="App">
+        <Routes>
+          <Route path="/" element={token ? <Home/> : <Login/>}/>
+          <Route exact path="/register" element={<Register/>}/>
+          <Route exact path="/login" element={<Login/>}/>
+        </Routes>
+    </div>
+=======
       <div className="">
         <div className="row">
           <div className="col-3">
@@ -36,6 +54,7 @@ function App() {
           </div>
         </div>
       </div>
+>>>>>>> 6622c8885a51c1058b737c33b8d5312fb180437f
     </Router>
   );
 }
