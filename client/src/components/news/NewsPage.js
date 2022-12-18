@@ -1,79 +1,61 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const NewsPage = () => {
   return (
     <div>
-      <div>
-        <div classname="text-center py-4">
-          <h3>So'nggi yangiliklar</h3>
-        </div>
-        <div classname="row">
-          <div classname="col-9">
-            <div classname="mb-5">
-              <div classname="my-5">
-                <div classname="d-flex mx-4">
-                  <div classname="news-card-content">
-                    <h4 classname="fw-bold">
-                      <a classname="text-decoration-none text-dark" href="#">Card title</a>
-                    </h4>
-                    <p classname="py-2 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    <div classname="hstack gap-3">
-                      <span>Vaqt</span>
-                      <div classname="vr" />
-                      <a classname="text-decoration-none text-dark fw-semibold" href="#">Texnologiya</a>
-                    </div>
-                  </div>
-                  <div classname="news-card-img">
-                    <img src="https://picsum.photos/150/150" alt="..." width="{150}" height="{150}" />
+      <div className="text-center py-4">
+        <h3>So'nggi yangiliklar</h3>
+      </div>
+      <div className="row">
+        <div className="col col-md-9">
+          <div className="mb-5">
+            <div className="my-5">
+              <div className="row mx-4">
+                <div className="col col-md-9">
+                  <h4 className="fw-bold">
+                    <Link to="/topshiriqlar" className="text-decoration-none text-dark">IT topshiriqlarimizning birinchi qismi</Link>
+                  </h4>
+                  <p className="py-2 text-muted">Platformamizga IT sohasiga oid topshiriqlarimizning birinchi qismi yuklandi. Bemalol topshiriqlarni bajarishingiz mumkin.</p>
+                  <div className="hstack gap-3">
+                    <span>19:36 am - 18.12.2022</span>
+                    <div className="vr"></div>
+                    <a className="text-decoration-none text-dark fw-semibold" href="#">Texnologiya</a>
                   </div>
                 </div>
-              </div>
-              <div classname="my-5">
-                <div classname="d-flex mx-4">
-                  <div classname="news-card-content">
-                    <h4 classname="fw-bold">
-                      <a classname="text-decoration-none text-dark" href="#">Card title</a>
-                    </h4>
-                    <p classname="py-2 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    <div classname="hstack gap-3">
-                      <span>Vaqt</span>
-                      <div classname="vr" />
-                      <a classname="text-decoration-none text-dark fw-semibold" href="#">Tabiiy fanlar</a>
-                    </div>
-                  </div>
-                  <div classname="news-card-img">
-                    <img src="https://picsum.photos/150/150" alt="..." width="{150}" height="{150}" />
-                  </div>
+                <div className="col col-md-3 mt-3 mt-sm-3 mt-md-0">
+                  <img src="https://picsum.photos/150/150?ramdom=12" alt="..." width={150} height={150} />
                 </div>
               </div>
-              <div classname="my-5">
-                <div classname="d-flex mx-4">
-                  <div classname="news-card-content">
-                    <h4 classname="fw-bold">
-                      <a classname="text-decoration-none text-dark" href="#">Card title</a>
-                    </h4>
-                    <p classname="py-2 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    <div classname="hstack gap-3">
-                      <span>Vaqt</span>
-                      <div classname="vr" />
-                      <a classname="text-decoration-none text-dark fw-semibold" href="#">Maslahatlar</a>
-                    </div>
+            </div>
+            <div className="my-5">
+              <div className="row mx-4">
+                <div className="col col-md-9">
+                  <h4 className="fw-bold">
+                    <a className="text-decoration-none text-dark" href="#">Siz uchun foydali maslahatlar</a>
+                  </h4>
+                  <p className="py-2 text-muted">O'z ustingizda ishlashingiz uchun, intizomingizni rivojlantirishga yordam beradigan tavsiya va manbalar.</p>
+                  <div className="hstack gap-3">
+                    <span>18:06 am - 18.12.2022</span>
+                    <div className="vr"></div>
+                    <a className="text-decoration-none text-dark fw-semibold" href="#">Maslahatlar</a>
                   </div>
-                  <div classname="news-card-img">
-                    <img src="https://picsum.photos/150/150" alt="..." width="{150}" height="{150}" />
-                  </div>
+                </div>
+                <div className="col col-md-3 mt-3 mt-sm-3 mt-md-0">
+                  <img src="https://picsum.photos/150/150?ramdom=124" alt="..." width={150} height={150} />
                 </div>
               </div>
             </div>
           </div>
-          <div classname="col-3">
-            <div classname="text-center">
-              <button type="button" className="btn btn-light px-5 py-3 my-2">Texnologiya</button>
-              <button type="button" className="btn btn-light px-5 py-3 my-2">Tabiiy fanlar</button>
-              <button type="button" className="btn btn-light px-5 py-3 my-2">Aniq fanlar</button>
-              <button type="button" className="btn btn-light px-5 py-3 my-2">Maslahatlar</button>
-              <button type="button" className="btn btn-light px-5 py-3 my-2">Psixologiya</button>
-            </div>
+        </div>
+        <div className="col col-md-3">
+          <div className="text-center">
+            <h4 className="mb-3">Bo'limlar</h4>
+            <button type="button" class="btn btn-light px-5 py-3 my-2">Texnologiya</button>
+            <button type="button" class="btn btn-light px-5 py-3 my-2">Tabiiy fanlar</button>
+            <button type="button" class="btn btn-light px-5 py-3 my-2">Aniq fanlar</button>
+            <button type="button" class="btn btn-light px-5 py-3 my-2">Maslahatlar</button>
+            <button type="button" class="btn btn-light px-5 py-3 my-2">Psixologiya</button>
           </div>
         </div>
       </div>

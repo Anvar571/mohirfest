@@ -32,10 +32,10 @@ function App() {
         <div className={`row ${auth.token ? "" : 'd-flex justify-content-center align-items-center'} `}>
           {
             auth.token &&
-            <div className="col-3">
+            <div className="col-2 col-sm-2 col-md-3">
               <Menu />
             </div>}
-          <div className="col-9">
+          <div className="col-10 col-sm-10 col-md-9">
             {auth.token && <Header />}
             <Routes>
               <Route path="/" element={auth.token ? <Home /> : <Login />} />

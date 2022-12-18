@@ -1,22 +1,23 @@
 import React from 'react';
 import { useState } from 'react';
-import UserAvatar from '../../images/user-img.png';
 import { BsSearch } from "react-icons/bs";
 import '../../styles/home.css';
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 function WelcomeUser(props) {
      return <span>{props.name}</span>;
 }
 
 const Header = () => {
+     const { auth } = useSelector(state => state);
      const [dateState, useDateState] = useState(new Date());
      return (
           <div>
-               <div className="container d-flex my-4 justify-content-around border-bottom pb-4">
-                    <div className="d-flex flex-column">
-                         <h4>Salom <WelcomeUser name="Username" /></h4>
-                         <span>
+               <div className="container d-flex my-4 justify-content-between border-bottom align-items-center pb-4">
+                    <div className="d-flex flex-column d-none d-sm-block d-md-block">
+                         <h4 className="fs-6 fs-sm-6 fs-md-3">Salom <WelcomeUser name={`${auth.user.username}`} /></h4>
+                         <span className="fs-6 fs-sm-6 fs-md-5">
                               {dateState.toLocaleString('en-US', {
                                    hour: 'numeric',
                                    minute: 'numeric',
@@ -35,14 +36,15 @@ const Header = () => {
                               <div className="mySearchInput" style={{ position: "relative" }}>
                                    <input className="myInput w-100 form-control"
                                         type="text" placeholder="Search tasks" style={{ border: "1px solid #ddd" }} />
-                                   <BsSearch style={{ position: "absolute", right: "10px", top:"10px" }} />
+                                   <BsSearch style={{ position: "absolute", right: "10px", top: "10px" }} />
                               </div>
                          </form>
                     </div>
                     <div>
-                         <Link to="/profile" style={{textDecoration: "none"}}>
-                              <span className="profileName" style={{color:"#000"}}>FullName</span>
-                              <img src={UserAvatar} alt="User Avatar" />
+                         <Link to="/profile" style={{ textDecoration: "none" }}>
+                              <span className="profileName d-none d-sm-none d-md-inline" style={{ color: "#000", paddingRight: "15px" }}>{auth.user.fullname}</span>
+                              <img src={auth.user.avatar} alt="User Avatar" width="50" height="50"
+                              style={{borderRadius:"50%", objectFit:"cover"}} />
                          </Link>
                     </div>
                </div>

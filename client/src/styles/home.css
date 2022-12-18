@@ -38,3 +38,9 @@ ul {
      border-bottom: 4px solid yellowgreen;
      border-radius: 7px;
 }
+
+@media screen and (max-width: 750px) {
+     .home .col-md-6 {
+          width: 100%;
+     }
+}
