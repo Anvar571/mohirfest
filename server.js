@@ -1,26 +1,34 @@
 require("dotenv").config()
 const express = require("express");
+const app = express();
 const cookieParser = require("cookie-parser")
-const cors = require("cors")
-const app = express()
-const mongoose = require("mongoose")
+const cors = require("cors");
+const mongoose = require("mongoose");
+const bodyParser = require('body-parser')
 
-const port = process.env.PORT
+const PORT = process.env.PORT;
 const dbUrl = process.env.DBURL
 
-app.use(express.json())
+// middleware
 app.use(cookieParser())
-app.use(cors())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 app.use(express.urlencoded({extended: true}))
+app.use(cors())
+app.use(express.json())
 
-mongoose.connect(dbUrl, {
-}, (err) => {
-    if (err) return console.log(err);
-    console.log("db connect successfull");
-})
-
+// auth logic
 app.use("/api", require("./routers/authRoute"));
 
-app.listen(port, () => {
-    console.log(`listen on port ${port}`);
+
+mongoose.connect(dbUrl, {
+    usenewUrlParser: true,
+    useUnifiedTopology: true,
+}, (err) => {
+    if (err) throw err;
+    console.log("connect to db");
+})
+
+app.listen(PORT, () => {
+    console.log(`Listen on port ${PORT} port`);
 })

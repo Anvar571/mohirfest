@@ -10,13 +10,12 @@ function WelcomeUser(props) {
 }
 
 const Header = () => {
-     const user = JSON.parse(localStorage.getItem("refresh"))
      const [dateState, useDateState] = useState(new Date());
      return (
           <div>
                <div className="container d-flex my-4 justify-content-around border-bottom pb-4">
                     <div className="d-flex flex-column">
-                         <h4>Salom <WelcomeUser name={`${user.username}`} /></h4>
+                         <h4>Salom <WelcomeUser name="Username" /></h4>
                          <span>
                               {dateState.toLocaleString('en-US', {
                                    hour: 'numeric',
@@ -42,7 +41,7 @@ const Header = () => {
                     </div>
                     <div>
                          <Link to="/profile" style={{textDecoration: "none"}}>
-                              <span className="profileName" style={{color:"#000"}}>{user.fullname}</span>
+                              <span className="profileName" style={{color:"#000"}}>FullName</span>
                               <img src={UserAvatar} alt="User Avatar" />
                          </Link>
                     </div>

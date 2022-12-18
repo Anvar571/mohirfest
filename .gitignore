@@ -3,6 +3,8 @@
 ### dotenv ###
 .env
 
+*.lock.json
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
