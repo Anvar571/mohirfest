@@ -19,24 +19,24 @@ function App() {
     <Router>
       <div className="">
         <div className="row">
-          <div className="col-3">
+          <div className="col-2 col-sm-2 col-md-3">
             {token && <Menu />}
           </div>
-          <div className="col-9">
+          <div className="col-10 col-sm-10 col-md-9">
             {token && <Header />}
             <Routes>
-              <Route path="/" element={token ? <Home /> : <Register/>} />
+              <Route path="/" element={token ? <Home /> : <Register />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/register" element={<Register />} />
 
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/topshiriqlar/" element={<Tasks/>}/>
-                <Route path="/topshiriqlar/:id" element={<Yonalish/>}/>
+              <Route path="/topshiriqlar/" element={<Tasks />} />
+              <Route path="/topshiriqlar/:id" element={<Yonalish />} />
 
-              <Route path="/yangiliklar" element={<NewsPage/>}/>
-              <Route path="/maslahatlar" element={<MaslahatlarPage/>}/>
-              <Route path="/profile" element={<ProfilePage/>}/>
-              <Route path="*" element={<NotFoudPage/>}/>
+              <Route path="/yangiliklar" element={<NewsPage />} />
+              <Route path="/maslahatlar" element={<MaslahatlarPage />} />
+              <Route path="/profile" element={<ProfilePage />} />
+              <Route path="*" element={<NotFoudPage />} />
             </Routes>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import DefaultNewsImg from '../../images/default-news-img.jpg'
 
 const NewsPage = () => {
   return (
@@ -7,7 +8,7 @@ const NewsPage = () => {
         <h3>So'nggi yangiliklar</h3>
       </div>
       <div className="row">
-        <div className="col-9">
+        <div className="col col-md-9">
           <div className="mb-5">
             <div className="my-5">
               <div className="d-flex mx-4">
@@ -23,7 +24,7 @@ const NewsPage = () => {
                   </div>
                 </div>
                 <div className="news-card-img">
-                  <img src="https://picsum.photos/150/150" alt="..." width={150} height={150} />
+                  <img src={DefaultNewsImg} alt="..." width={150} height={150} />
                 </div>
               </div>
             </div>
@@ -41,7 +42,7 @@ const NewsPage = () => {
                   </div>
                 </div>
                 <div className="news-card-img">
-                  <img src="https://picsum.photos/150/150" alt="..." width={150} height={150} />
+                  <img src={DefaultNewsImg} alt="..." width={150} height={150} />
                 </div>
               </div>
             </div>
@@ -59,14 +60,15 @@ const NewsPage = () => {
                   </div>
                 </div>
                 <div className="news-card-img">
-                  <img src="https://picsum.photos/150/150" alt="..." width={150} height={150} />
+                  <img src={DefaultNewsImg} alt="..." width={150} height={150} />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col col-md-3">
           <div className="text-center">
+            <h4 className="mb-3">Bo'limlar</h4>
             <button type="button" class="btn btn-light px-5 py-3 my-2">Texnologiya</button>
             <button type="button" class="btn btn-light px-5 py-3 my-2">Tabiiy fanlar</button>
             <button type="button" class="btn btn-light px-5 py-3 my-2">Aniq fanlar</button>
