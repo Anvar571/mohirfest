@@ -1,0 +1,34 @@
+*{
+    margin: 0 !important;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+.myNavLink {
+    color: black;
+}
+
+.footer_about {
+    padding: 40px 0 20px 0;
+    text-align: center
+}
+
+Link {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+/* anvar uchun */
+/* ------------ auth css */
+@import url("./auth.css");
+
+/* anvar uchun */
+/* ------------ header css */
+@import url("./header.css");
+
+/* javohir uchun */
+/* ------------ home css */
+@import url("./home.css");
+
+/* ------------ tasks */
+@import url("./tasks.css");

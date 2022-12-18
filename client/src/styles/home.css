@@ -1,0 +1,40 @@
+.home .col-md-6 {
+     width: 35%;
+     height: 160px;
+     border-radius: 23px;
+     padding: 20px;
+     color: #fff;
+     background-color: rgb(40, 67, 157);
+}
+
+.home .col-md-3 {
+     height: 160px;
+     border-radius: 23px;
+     padding: 20px;
+     color: #000;
+     background-color: rgb(255, 255, 157);
+}
+
+.home .col3 {
+     height: 160px;
+     border-radius: 23px;
+     padding: 20px;
+     color: #000;
+     background-color: rgb(225, 245, 253);
+}
+
+/* ============= home list */
+ul {
+     padding: 0;
+     margin: 0;
+}
+
+.home_about_li {
+     list-style-type: none;
+     font-size: 20px;
+     padding: 15px;
+     margin-top: 10px !important;
+     display: block;
+     border-bottom: 4px solid yellowgreen;
+     border-radius: 7px;
+}

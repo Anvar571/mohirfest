@@ -1,0 +1,9 @@
+.task_content h6{
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+.task_content {
+    padding: 10px;
+}
