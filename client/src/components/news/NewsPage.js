@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import DefaultNewsImg from '../../images/default-news-img.jpg'
 
 const NewsPage = () => {
@@ -14,11 +15,11 @@ const NewsPage = () => {
               <div className="row mx-4">
                 <div className="col col-md-9">
                   <h4 className="fw-bold">
-                    <a className="text-decoration-none text-dark" href="#">Card title</a>
+                    <Link to="/topshiriqlar" className="text-decoration-none text-dark">IT topshiriqlarimizning birinchi qismi</Link>
                   </h4>
-                  <p className="py-2 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                  <p className="py-2 text-muted">Platformamizga IT sohasiga oid topshiriqlarimizning birinchi qismi yuklandi. Bemalol topshiriqlarni bajarishingiz mumkin.</p>
                   <div className="hstack gap-3">
-                    <span>Vaqt</span>
+                    <span>19:36 am - 18.12.2022</span>
                     <div className="vr"></div>
                     <a className="text-decoration-none text-dark fw-semibold" href="#">Texnologiya</a>
                   </div>
@@ -32,31 +33,13 @@ const NewsPage = () => {
               <div className="row mx-4">
                 <div className="col col-md-9">
                   <h4 className="fw-bold">
-                    <a className="text-decoration-none text-dark" href="#">Card title</a>
+                    <a className="text-decoration-none text-dark" href="#">Siz uchun foydali maslahatlar</a>
                   </h4>
-                  <p className="py-2 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                  <p className="py-2 text-muted">O'z ustingizda ishlashingiz uchun, intizomingizni rivojlantirishga yordam beradigan tavsiya va manbalar.</p>
                   <div className="hstack gap-3">
-                    <span>Vaqt</span>
+                    <span>18:06 am - 18.12.2022</span>
                     <div className="vr"></div>
-                    <a className="text-decoration-none text-dark fw-semibold" href="#">Texnologiya</a>
-                  </div>
-                </div>
-                <div className="col col-md-3 mt-3 mt-sm-3 mt-md-0">
-                  <img src={DefaultNewsImg} alt="..." width={150} height={150} />
-                </div>
-              </div>
-            </div>
-            <div className="my-5">
-              <div className="row mx-4">
-                <div className="col col-md-9">
-                  <h4 className="fw-bold">
-                    <a className="text-decoration-none text-dark" href="#">Card title</a>
-                  </h4>
-                  <p className="py-2 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                  <div className="hstack gap-3">
-                    <span>Vaqt</span>
-                    <div className="vr"></div>
-                    <a className="text-decoration-none text-dark fw-semibold" href="#">Texnologiya</a>
+                    <a className="text-decoration-none text-dark fw-semibold" href="#">Maslahatlar</a>
                   </div>
                 </div>
                 <div className="col col-md-3 mt-3 mt-sm-3 mt-md-0">

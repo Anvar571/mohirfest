@@ -1,8 +1,12 @@
 import React from 'react'
+import AboutBannerImg from '../../images/about-banner.png'
 
 const AboutPage = () => {
   return (
     <div>
+      <div className='d-flex justify-content-center'>
+        <img src={AboutBannerImg} alt="About Image" className='img-fluid' width={1000} height={400} />
+      </div>
       <div className='text-center py-3'>
         <h3>Biz haqimizda</h3>
       </div>
@@ -38,35 +42,25 @@ const AboutPage = () => {
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingThree">
               <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
+                Platformani kimlar ishlab chiqargan?
               </button>
             </h2>
             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
               <div className="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                Platformani <strong>RIVOJLAN</strong> jamoasi ya'ni <strong>Anvar Abdurashidov</strong>, <strong>Umidbek Azimov</strong> va <strong>Jahongir Murodboev</strong> lar ishlab chiqqan.
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-5">
-        <div className="row">
-          <div className="col-lg-4 text-center mb-5 mb-sm-5 mb-md-0">
-            <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width={140} height={140} />
-            <h2 className="py-3">Qulay</h2>
-            <p>Platformada ishlash va topshiriqlarni bajarish qulay. Har qanday inson platformadan qulay foydalana oladi.</p>
-          </div>
-          <div className="col-lg-4 text-center mb-5 mb-sm-5 mb-md-0">
-            <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width={140} height={140} />
-            <h2 className="py-3">Oson</h2>
-            <p>Platformadagi topshiriqlarning ko'p qismi oson darajadagi topshiriqlar hisoblanadi. Yangi boshlovchilar uchun maxsus qilingan.</p>
-          </div>
-          <div className="col-lg-4 text-center mb-5 mb-sm-5 mb-md-0">
-            <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width={140} height={140} />
-            <h2 className="py-3">Bepul</h2>
-            <p>Platformamizda barchasi bepul, sizdan 1 so'm ham ketmaydi. Aksincha siz topshiriqlarni to'g'ri bajarish orqali pul olishingiz mumkin.</p>
-          </div>
-        </div>
+      <div className="my-3">
+        <h2 class="text-center mb-3">Biz sizga nimalarni taklif qilamiz !</h2>
+        <ul class="home_about_ul">
+          <li class="home_about_li shadow ">Ilm berish orqali rag'batlantirish</li>
+          <li class="home_about_li shadow ">Yoshlarni qo'lab quvvatlash</li>
+          <li class="home_about_li shadow ">Zamonaviy ilmlar va texnologiyalar haqidagi ma'lumotlar</li>
+          <li class="home_about_li shadow ">Insonlarni ilmli bo'lishga undash</li>
+        </ul>
       </div>
     </div>
   )
