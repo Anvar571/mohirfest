@@ -12,6 +12,7 @@ import ProfilePage from "./components/profile/ProfilePage";
 import NotFoudPage from "./pages/notFoundPage";
 import Yonalish from "./components/topshiriq/Yo'nalishlar/Yonalishlar";
 
+// server add
 
 function App() {
   const token = localStorage.getItem("refresh")
