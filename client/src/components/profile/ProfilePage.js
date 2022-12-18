@@ -1,7 +1,12 @@
 import React from 'react'
+<<<<<<< HEAD
 import UserDefaultImage from '../../images/default-user-image.png';
+=======
+import { useSelector } from 'react-redux'
+>>>>>>> 95f9e8802850a76545b7fa4b58e4296ea7b2bf79
 
 const ProfilePage = () => {
+  const {auth} = useSelector(state => state);
   return (
     <div className="py-4 ">
       <div className="text-center mb-2 mb-md-5">
@@ -9,9 +14,15 @@ const ProfilePage = () => {
       </div>
       <div className="row">
         <div className="col-12 col-sm-12 col-md-4 text-center mb-4 mb-md-0">
+<<<<<<< HEAD
           <img className="rounded-circle py-4" src={UserDefaultImage} alt="..." width={200} height={250} />
           <h4 className="py-1">Jahongir Murodboev</h4>
           <p>useremail@email.com</p>
+=======
+          <img className="rounded-circle py-4" src={`${auth.user.avatar}`} alt="..." width={200} height={250} />
+          <h4 className="py-1">{auth.user.fullname}</h4>
+          <p>{auth.user.email}</p>
+>>>>>>> 95f9e8802850a76545b7fa4b58e4296ea7b2bf79
         </div>
         <div className="col-12 col-sm-12 col-md-8 px-0 px-sm-5">
           <form>
