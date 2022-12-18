@@ -1,36 +1,3 @@
-<<<<<<< HEAD
-import React, { useState } from 'react'
-import imgUrl from "../images/draw1.webp"
-import { useNavigate } from 'react-router-dom'
-
-const Login = () => {
-    const initialState = { email: "", password: "" }
-    const [userData, setUserData] = useState(initialState);
-    const { email, password } = userData;
-    const navigate = useNavigate();
-
-    const handleInput = (e) => {
-        const { name, value } = e.target
-        setUserData({ ...userData, [name]: value })
-    }
-
-
-    const handleBtn = (e) => {
-        e.preventDefault();
-        try {
-            const user = JSON.parse(localStorage.getItem("access"))
-            if (user.email !== email) return alert("Email and password is invalid")
-            if (password !== user.password) return alert("Email and password is invalid")
-            alert("Login success")
-            localStorage.removeItem("access")
-            localStorage.setItem("refresh", JSON.stringify(user))
-            navigate("/");
-        } catch (error) {
-            return alert(error.message)
-        }
-    }
-
-=======
 import React, {useEffect, useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import {useDispatch, useSelector} from "react-redux";
@@ -51,7 +18,6 @@ const Login = () => {
   }, [navigate, auth.token])
 
   const dispatch = useDispatch();
->>>>>>> 95f9e8802850a76545b7fa4b58e4296ea7b2bf79
 
   const handleChangeInput = (e) => {
     const {name, value} = e.target;
