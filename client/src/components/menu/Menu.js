@@ -11,8 +11,8 @@ import Logo from "../../images/siteLogo.svg";
 
 const Menu = () => {
      return (
-          <div className="d-flex shadow-sm flex-column vh-100" >
-               <Link to="/" className=" mb-3 px-3 mt-4 d-flex align-items-center"
+          <div className="d-flex shadow-sm flex-column vh-100 position-fixed" >
+               <Link to="/" className="mb-3 px-1 px-sm-1 px-md-3 mt-4 d-flex align-items-center"
                     style={{ textDecoration: "none" }}>
                     <img src={Logo} className="fs-4 me-3" alt="logo site" />
                     <h1 className='d-none d-sm-none d-md-block'

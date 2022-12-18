@@ -7,17 +7,17 @@ const Home = () => {
      return (
           <div className='home'>
                <div className='row mb-4'>
-                    <div className='shadow-sm col-md-6 m-3 '>
+                    <div className='shadow-sm col-md-6 m-0 m-sm-0 m-md-3 mb-3 mb-sm-3 mb-md-0'>
                          <BsCheckCircle />
                          <h5 className="py-2">Bepul ta'lim</h5>
                          <i>Bepul o'rganing, topshiriqlarni bajarish orqali daromad qiling.! </i>
                     </div>
-                    <div className='shadow-sm col-md-3 m-3'>
+                    <div className='shadow-sm col-md-3 m-0 m-sm-0 m-md-3 mb-3 mb-sm-3 mb-md-0'>
                          <BsCheckCircle />
                          <h5 className="py-2">Rag'batlantirish</h5>
                          <i>Chaqqon bo'lsangiz, o'rganib pul topishingiz mumkin!</i>
                     </div>
-                    <div className='shadow-sm col-md-3 m-3 col3'>
+                    <div className='shadow-sm col-md-3 m-0 m-sm-0 m-md-3 mb-3 mb-sm-3 mb-md-0 col3'>
                          <BsCheckCircle />
                          <h5 className="py-2">Kuchli intizom</h5>
                          <i>O'z ustingizda ishlashingiz uchun, muhim maslahatlar!</i>

@@ -11,8 +11,8 @@ const NewsPage = () => {
         <div className="col col-md-9">
           <div className="mb-5">
             <div className="my-5">
-              <div className="d-flex mx-4">
-                <div className="news-card-content">
+              <div className="row mx-4">
+                <div className="col col-md-9">
                   <h4 className="fw-bold">
                     <a className="text-decoration-none text-dark" href="#">Card title</a>
                   </h4>
@@ -23,14 +23,14 @@ const NewsPage = () => {
                     <a className="text-decoration-none text-dark fw-semibold" href="#">Texnologiya</a>
                   </div>
                 </div>
-                <div className="news-card-img">
+                <div className="col col-md-3 mt-3 mt-sm-3 mt-md-0">
                   <img src={DefaultNewsImg} alt="..." width={150} height={150} />
                 </div>
               </div>
             </div>
             <div className="my-5">
-              <div className="d-flex mx-4">
-                <div className="news-card-content">
+              <div className="row mx-4">
+                <div className="col col-md-9">
                   <h4 className="fw-bold">
                     <a className="text-decoration-none text-dark" href="#">Card title</a>
                   </h4>
@@ -38,17 +38,17 @@ const NewsPage = () => {
                   <div className="hstack gap-3">
                     <span>Vaqt</span>
                     <div className="vr"></div>
-                    <a className="text-decoration-none text-dark fw-semibold" href="#">Tabiiy fanlar</a>
+                    <a className="text-decoration-none text-dark fw-semibold" href="#">Texnologiya</a>
                   </div>
                 </div>
-                <div className="news-card-img">
+                <div className="col col-md-3 mt-3 mt-sm-3 mt-md-0">
                   <img src={DefaultNewsImg} alt="..." width={150} height={150} />
                 </div>
               </div>
             </div>
             <div className="my-5">
-              <div className="d-flex mx-4">
-                <div className="news-card-content">
+              <div className="row mx-4">
+                <div className="col col-md-9">
                   <h4 className="fw-bold">
                     <a className="text-decoration-none text-dark" href="#">Card title</a>
                   </h4>
@@ -56,10 +56,10 @@ const NewsPage = () => {
                   <div className="hstack gap-3">
                     <span>Vaqt</span>
                     <div className="vr"></div>
-                    <a className="text-decoration-none text-dark fw-semibold" href="#">Maslahatlar</a>
+                    <a className="text-decoration-none text-dark fw-semibold" href="#">Texnologiya</a>
                   </div>
                 </div>
-                <div className="news-card-img">
+                <div className="col col-md-3 mt-3 mt-sm-3 mt-md-0">
                   <img src={DefaultNewsImg} alt="..." width={150} height={150} />
                 </div>
               </div>

@@ -9,7 +9,7 @@ const Tasks = () => {
   return (
     <div className='tasks'>
       <div className='row'>
-        <div className='shadow col-md-3 m-2'>
+        <div className='shadow col-md-3 m-0 m-sm-0 m-md-2 mb-3 mb-sm-3 mb-md-0'>
           <div className='task_content '>
             <Link to="/topshiriqlar/it"
               className='d-flex justify-content-center align-items-center '
@@ -19,7 +19,7 @@ const Tasks = () => {
             </Link>
           </div>
         </div>
-        <div className='shadow col-md-3 m-2'>
+        <div className='shadow col-md-3 m-0 m-sm-0 m-md-2 mb-3 mb-sm-3 mb-md-0'>
           <div className='task_content '>
             <Link to="/topshiriqlar/fizika"
               className='d-flex justify-content-center align-items-center '
@@ -29,7 +29,7 @@ const Tasks = () => {
             </Link>
           </div>
         </div>
-        <div className='shadow col-md-3 m-2'>
+        <div className='shadow col-md-3 m-0 m-sm-0 m-md-2 mb-3 mb-sm-3 mb-md-0'>
           <div className='task_content '>
             <Link to="/topshiriqlar/math"
               className='d-flex justify-content-center align-items-center '
@@ -39,7 +39,7 @@ const Tasks = () => {
             </Link>
           </div>
         </div>
-        <div className='shadow col-md-3 m-2'>
+        <div className='shadow col-md-3 m-0 m-sm-0 m-md-2 mb-3 mb-sm-3 mb-md-0'>
           <div className='task_content '>
             <Link to="/topshiriqlar/kimyo"
               className='d-flex justify-content-center align-items-center '

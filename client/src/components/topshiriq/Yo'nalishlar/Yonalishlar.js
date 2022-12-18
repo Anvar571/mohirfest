@@ -8,7 +8,7 @@ const Yonalish = () => {
 
     return (
         <div>
-            <div className="px-4">
+            <div className="px-3 px-sm-3 px-md-4">
                 <Link to="/topshiriqlar" className='text-decoration-none' >
                     <div className="py-3">
                         <BsArrowLeft />

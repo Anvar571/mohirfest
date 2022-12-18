@@ -14,10 +14,10 @@ const Header = () => {
      const [dateState, useDateState] = useState(new Date());
      return (
           <div>
-               <div className="container d-flex my-4 justify-content-around border-bottom pb-4">
-                    <div className="d-flex flex-column">
-                         <h4>Salom <WelcomeUser name={`${user.username}`} /></h4>
-                         <span>
+               <div className="container d-flex my-4 justify-content-between border-bottom align-items-center pb-4">
+                    <div className="d-flex flex-column d-none d-sm-block d-md-block">
+                         <h4 className="fs-6 fs-sm-6 fs-md-3">Salom <WelcomeUser name={`${user.username}`} /></h4>
+                         <span className="fs-6 fs-sm-6 fs-md-5">
                               {dateState.toLocaleString('en-US', {
                                    hour: 'numeric',
                                    minute: 'numeric',
@@ -42,7 +42,7 @@ const Header = () => {
                     </div>
                     <div>
                          <Link to="/profile" style={{ textDecoration: "none" }}>
-                              <span className="profileName" style={{ color: "#000", paddingRight: "15px" }}>{user.fullname}</span>
+                              <span className="profileName d-none d-sm-none d-md-inline" style={{ color: "#000", paddingRight: "15px" }}>{user.fullname}</span>
                               <img src={UserAvatar} alt="User Avatar" />
                          </Link>
                     </div>
