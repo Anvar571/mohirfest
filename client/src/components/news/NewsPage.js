@@ -1,5 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
+import DefaultNewsImg from '../../images/default-news-img.jpg'
+=======
+>>>>>>> 95f9e8802850a76545b7fa4b58e4296ea7b2bf79
 
 const NewsPage = () => {
   return (
@@ -24,7 +28,11 @@ const NewsPage = () => {
                   </div>
                 </div>
                 <div className="col col-md-3 mt-3 mt-sm-3 mt-md-0">
+<<<<<<< HEAD
+                  <img src={DefaultNewsImg} alt="..." width={150} height={150} />
+=======
                   <img src="https://picsum.photos/150/150?ramdom=12" alt="..." width={150} height={150} />
+>>>>>>> 95f9e8802850a76545b7fa4b58e4296ea7b2bf79
                 </div>
               </div>
             </div>
@@ -42,7 +50,11 @@ const NewsPage = () => {
                   </div>
                 </div>
                 <div className="col col-md-3 mt-3 mt-sm-3 mt-md-0">
+<<<<<<< HEAD
+                  <img src={DefaultNewsImg} alt="..." width={150} height={150} />
+=======
                   <img src="https://picsum.photos/150/150?ramdom=124" alt="..." width={150} height={150} />
+>>>>>>> 95f9e8802850a76545b7fa4b58e4296ea7b2bf79
                 </div>
               </div>
             </div>
