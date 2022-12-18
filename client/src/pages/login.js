@@ -1,19 +1,19 @@
-import React, {useState } from 'react'
+import React, { useState } from 'react'
 import imgUrl from "../images/draw1.webp"
 import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
-    const initialState = { email: '', password: "" }
+    const initialState = { email: "", password: "" }
     const [userData, setUserData] = useState(initialState);
     const { email, password } = userData;
     const navigate = useNavigate();
 
     const handleInput = (e) => {
-        const {name, value} = e.target
-        setUserData({...userData, [name]:value})
+        const { name, value } = e.target
+        setUserData({ ...userData, [name]: value })
     }
 
-    
+
     const handleBtn = (e) => {
         e.preventDefault();
         try {
@@ -28,7 +28,7 @@ const Login = () => {
             return alert(error.message)
         }
     }
-    
+
 
     return (
         <section className="vh-100 shadow-lg" style={{ backgroundColor: '#eee', border: "none" }}>

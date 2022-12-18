@@ -3,7 +3,7 @@ import { useState } from 'react';
 import UserAvatar from '../../images/user-img.png';
 import { BsSearch } from "react-icons/bs";
 import '../../styles/home.css';
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function WelcomeUser(props) {
      return <span>{props.name}</span>;
@@ -36,13 +36,13 @@ const Header = () => {
                               <div className="mySearchInput" style={{ position: "relative" }}>
                                    <input className="myInput w-100 form-control"
                                         type="text" placeholder="Search tasks" style={{ border: "1px solid #ddd" }} />
-                                   <BsSearch style={{ position: "absolute", right: "10px", top:"10px" }} />
+                                   <BsSearch style={{ position: "absolute", right: "10px", top: "10px" }} />
                               </div>
                          </form>
                     </div>
                     <div>
-                         <Link to="/profile" style={{textDecoration: "none"}}>
-                              <span className="profileName" style={{color:"#000"}}>{user.fullname}</span>
+                         <Link to="/profile" style={{ textDecoration: "none" }}>
+                              <span className="profileName" style={{ color: "#000", paddingRight: "15px" }}>{user.fullname}</span>
                               <img src={UserAvatar} alt="User Avatar" />
                          </Link>
                     </div>
