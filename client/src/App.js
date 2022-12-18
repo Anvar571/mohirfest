@@ -16,6 +16,8 @@ import { useSelector } from "react-redux";
 import Alert from "./components/alert/Alert";
 import { useDispatch } from "react-redux";
 import { refresh_token } from "./redux/actions/authAction";
+import Task from "./components/topshiriq/Task/Task";
+import { getTask } from "./redux/actions/taskAction";
 
 function App() {
   const { auth } = useSelector(state => state);
@@ -24,6 +26,10 @@ function App() {
   useEffect(() => {
     dispatch(refresh_token())
   },[dispatch])
+
+  useEffect(() => {
+    if (auth.token) dispatch(getTask(auth.token))
+  }, [dispatch, auth.token])
 
   return (
     <Router>
@@ -45,6 +51,7 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/topshiriqlar/" element={<Tasks />} />
               <Route path="/topshiriqlar/:id" element={<Yonalish />} />
+              <Route path="/topshiriqlar/:id/:task" element={<Task />} />
 
               <Route path="/yangiliklar" element={<NewsPage />} />
               <Route path="/maslahatlar" element={<MaslahatlarPage />} />

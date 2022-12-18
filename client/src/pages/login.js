@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import {useDispatch, useSelector} from "react-redux";
 import regImage from "../images/draw1.webp"
 import { login } from '../redux/actions/authAction';
-import { BsFillEyeFill } from "react-icons/bs";
 
 const Login = () => {
   const {auth} = useSelector(state => state);
