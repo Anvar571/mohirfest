@@ -22,7 +22,7 @@ const OneTaskUi = () => {
     
     return (
         <div>
-            <Link to="/topshiriqlar" className='text-decoration-none' >
+            <Link to={`/topshiriqlar/${id}`} className='text-decoration-none' >
                 <div className="py-3">
                     <BsArrowLeft />
                     <span className='px-2'>ortga qaytish</span>

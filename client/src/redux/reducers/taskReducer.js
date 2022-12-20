@@ -12,6 +12,11 @@ const taskReducer = (state = initialState, action) => {
                 ...state,
                 tasks: action.payload.tasks
             }
+        case TASK_TYPE.CREATE_TASK:
+            return {
+                ...state,
+                task: action.payload
+            }
         default:
             return state
     }
