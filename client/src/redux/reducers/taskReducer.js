@@ -1,19 +1,25 @@
-import { GLOBAL_TYPES } from "../actions/globalType"
+import { TASK_TYPE } from "../actions/taskAction"
 
 const initialState = {
-    tasks: []
+    tasks: [],
+    task: []
 }
 
-const authReducer = (state = initialState, action) => {
+const taskReducer = (state = initialState, action) => {
     switch (action.type) {
-        case GLOBAL_TYPES.TASK:
+        case TASK_TYPE.GET_ALL_TASK:
             return {
                 ...state,
                 tasks: action.payload.tasks
+            }
+        case TASK_TYPE.GET_TASK:
+            return {
+                ...state,
+                task: action.payload.task
             }
         default:
             return state
     }
 }
 
-export default authReducer
+export default taskReducer

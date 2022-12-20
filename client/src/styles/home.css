@@ -39,7 +39,7 @@ ul {
      border-radius: 7px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
      .home .col-md-6 {
           width: 100%;
      }

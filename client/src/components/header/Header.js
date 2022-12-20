@@ -12,6 +12,11 @@ function WelcomeUser(props) {
 const Header = () => {
      const { auth } = useSelector(state => state);
      const [dateState, useDateState] = useState(new Date());
+
+     const handleInnput = (e) => {
+          e.preventDefault();
+     }
+
      return (
           <div>
                <div className="container d-flex my-4 justify-content-between border-bottom align-items-center pb-4">
@@ -32,9 +37,9 @@ const Header = () => {
                          </span>
                     </div>
                     <div className="navSearchForm">
-                         <form>
+                         <form className='' onSubmit={handleInnput}>
                               <div className="mySearchInput" style={{ position: "relative" }}>
-                                   <input className="myInput w-100 form-control"
+                                   <input className="myInput w-100 form-control" onChange={handleInnput}
                                         type="text" placeholder="Search tasks" style={{ border: "1px solid #ddd" }} />
                                    <BsSearch style={{ position: "absolute", right: "10px", top: "10px" }} />
                               </div>

@@ -48,6 +48,9 @@ const Home = () => {
                          <li className='home_about_li shadow '>
                               Insonlarni ilmli bo'lishga undash
                          </li>
+                         <li className='home_about_li shadow '>
+                              Boshlang'ich dasturchilarni ishga joylashish uchun yordamlashish
+                         </li>
                     </ul>
                </div>
                <Link to="/about" style={{ textDecoration: "none", }}>

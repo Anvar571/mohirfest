@@ -2,9 +2,10 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { BsArrowLeft } from "react-icons/bs";
 import NotFoudPage from '../../../pages/notFoundPage';
+import TaskOne from './TaksOne';
 
-const genereatePage = (id) => {
-    const component = () => require(`./${id}`).default;
+const Yonalish = () => {
+    const {id} = useParams();
     try {
         return (
             <div className="px-3 px-sm-3 px-md-4">
@@ -19,18 +20,12 @@ const genereatePage = (id) => {
                         <button className='btn btn-primary'>Create Task</button>
                     </Link>
                 </div>
-                {React.createElement(component())}
+                <TaskOne id={id}/>
             </div>
         )
     } catch (error) {
         return <NotFoudPage />
     }
-
-}
-
-const Yonalish = () => {
-    const { id } = useParams()
-    return genereatePage(id)
 }
 
 export default Yonalish
