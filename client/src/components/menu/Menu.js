@@ -6,6 +6,7 @@ import { BsWallet2 } from "react-icons/bs";
 import { BsGear } from "react-icons/bs";
 import { BsFillChatQuoteFill } from "react-icons/bs";
 import { BsFillCalendarFill } from "react-icons/bs";
+import {FcMoneyTransfer} from "react-icons/fc";
 import { Link } from 'react-router-dom';
 import Logo from "../../images/siteLogo.svg";
 
@@ -53,6 +54,12 @@ const Menu = () => {
                          <Link className="nav-link myNavLink d-flex align-items-center" to="/profile">
                               <BsGear />
                               <span className="px-3 d-none d-sm-none d-md-block">Profil</span>
+                         </Link>
+                    </li>
+                    <li className="nav-item d-flex py-3">
+                         <Link className="nav-link myNavLink d-flex align-items-center" to="/money">
+                              <FcMoneyTransfer />
+                              <span className="px-3 d-none d-sm-none d-md-block">Pull yechib olish</span>
                          </Link>
                     </li>
                </ul>

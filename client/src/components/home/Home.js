@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 // import { Link } from 'react-router-dom'
 import { BsCheckCircle, BsArrowRight } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import {getDataAPI} from "../../utils/serverAPI";
 
 const Home = () => {
+     const [users, setUsers] = useState([]);
+
+     useEffect(() => {
+          getDataAPI("lengthuser")
+          .then(res => setUsers(res.data))
+     }, [setUsers])
+
      return (
           <div className='home'>
+               <i className='shadow-sm w-100 m-0 m-sm-0 m-md-3 mb-3 mb-sm-3 mb-md-0 col3
+               ' style={{margin: "5px",}}>Ro'yxatdan o'tgan foydalanuvchilar soni {users.length} ta</i>
                <div className='row mb-4'>
                     <div className='shadow-sm col-md-6 m-0 m-sm-0 m-md-3 mb-3 mb-sm-3 mb-md-0'>
                          <BsCheckCircle />

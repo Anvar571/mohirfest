@@ -12,15 +12,12 @@ import MaslahatlarPage from "./components/maslahatlar/MaslahatlarPage";
 import ProfilePage from "./components/profile/ProfilePage";
 import NotFoudPage from "./pages/notFoundPage";
 import Yonalish from "./components/topshiriq/Yo'nalishlar/Yonalishlar";
-<<<<<<< HEAD
-
-// server add
-=======
 import { useSelector } from "react-redux";
 import Alert from "./components/alert/Alert";
 import { useDispatch } from "react-redux";
 import { refresh_token } from "./redux/actions/authAction";
->>>>>>> 95f9e8802850a76545b7fa4b58e4296ea7b2bf79
+import Task from "./components/topshiriq/Task/Task";
+import { getTask } from "./redux/actions/taskAction";
 
 function App() {
   const { auth } = useSelector(state => state);
@@ -30,20 +27,14 @@ function App() {
     dispatch(refresh_token())
   },[dispatch])
 
+  useEffect(() => {
+    if (auth.token) dispatch(getTask(auth.token))
+  }, [dispatch, auth.token])
+
   return (
     <Router>
       <Alert/>
       <div className="">
-<<<<<<< HEAD
-        <div className="row">
-          <div className="col-2 col-sm-2 col-md-3">
-            {token && <Menu />}
-          </div>
-          <div className="col-10 col-sm-10 col-md-9">
-            {token && <Header />}
-            <Routes>
-              <Route path="/" element={token ? <Home /> : <Register />} />
-=======
         <div className={`row ${auth.token ? "" : 'd-flex justify-content-center align-items-center'} `}>
           {
             auth.token &&
@@ -54,13 +45,13 @@ function App() {
             {auth.token && <Header />}
             <Routes>
               <Route path="/" element={auth.token ? <Home /> : <Login />} />
->>>>>>> 95f9e8802850a76545b7fa4b58e4296ea7b2bf79
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/register" element={<Register />} />
 
               <Route path="/about" element={<AboutPage />} />
               <Route path="/topshiriqlar/" element={<Tasks />} />
               <Route path="/topshiriqlar/:id" element={<Yonalish />} />
+              <Route path="/topshiriqlar/:id/:task" element={<Task />} />
 
               <Route path="/yangiliklar" element={<NewsPage />} />
               <Route path="/maslahatlar" element={<MaslahatlarPage />} />

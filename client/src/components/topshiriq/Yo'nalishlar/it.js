@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import {useSelector } from "react-redux";
 
 const ItYonalish = () => {
+  const { task } = useSelector(state => state);
+
   return (
     <div>
       <div className='text-center'>
@@ -11,33 +14,16 @@ const ItYonalish = () => {
         </p>
       </div>
       <ul className='home_about_ul'>
-        <Link to="1"
-          className='home_about_li shadow d-flex justify-content-between align-items-center'
-          style={{ textDecoration: "none", color: "#000" }}>
-          <h6>Boshlang'ich HTML: sodda 3 ta sahifali web sayt yarating</h6>
-          <button className='btn btn-success'>10 ball</button>
-        </Link>
-
-        <Link to="2"
-          className='home_about_li shadow d-flex justify-content-between align-items-center'
-          style={{ textDecoration: "none", color: "#000" }}>
-          <h6>Boshlang'ich CSS: sayt uchun sodda loader yasang</h6>
-          <button className='btn btn-success'>10 ball</button>
-        </Link>
-
-        <Link to="3"
-          className='home_about_li shadow d-flex justify-content-between align-items-center'
-          style={{ textDecoration: "none", color: "#000" }}>
-          <h6>Boshlang'ich Javascript: foydalanuvchidan saytga kirganda uning yoshini so'raydigan funksiya yozing</h6>
-          <button className='btn btn-success'>10 ball</button>
-        </Link>
-
-        <Link to="4"
-          className='home_about_li shadow d-flex justify-content-between align-items-center'
-          style={{ textDecoration: "none", color: "#000" }}>
-          <h6>Boshlang'ich Python: matematik funksiyalar orqali kalkulyator yasang</h6>
-          <button className='btn btn-success'>10 ball</button>
-        </Link>
+        {
+          task.tasks.map(task => (
+            <Link to={`${task._id}`} key={task._id}
+              className='home_about_li shadow d-flex justify-content-between align-items-center'
+              style={{ textDecoration: "none", color: "#000" }}>
+              <h6>{task.title}</h6>
+              <button className='btn btn-success'>{task.ball}</button>
+            </Link>
+          ))
+        }
       </ul>
     </div>
   )
