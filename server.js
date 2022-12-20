@@ -19,7 +19,7 @@ app.use(express.json())
 
 // auth logic
 app.use("/api", require("./routers/authRoute"));
-
+app.use("/api", require("./routers/TaskRoute"));
 
 mongoose.connect(dbUrl, {
     usenewUrlParser: true,

@@ -41,7 +41,12 @@ const UserSchema = new mongoose.Schema({
         maxlength: 200,
     },
     role: {type: String, default: "user"},
-    website:{type: String, default: ""}
+    website:{type: String, default: ""},
+
+    ball: {
+        type: Number,
+        default: 0
+    }
 }, {
     timestamps: true
 })
