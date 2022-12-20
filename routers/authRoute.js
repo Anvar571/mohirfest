@@ -10,4 +10,6 @@ router.post("/logout", AuthCtrl.logout);
 
 router.post("/refresh_token", AuthCtrl.generateAccessToken);
 
+router.get("/lengthuser", AuthCtrl.userLength)
+
 module.exports  = router

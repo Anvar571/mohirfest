@@ -4,7 +4,7 @@ import ItIMage from "../../images/tasks/system.png"
 import Fizik from "../../images/tasks/atom.png"
 import Math from "../../images/tasks/calculating.png"
 import Kimyo from "../../images/tasks/chemistry.png";
-
+import developer from "../../images/dev.png";
 
 const task = [
   { 
@@ -31,6 +31,12 @@ const task = [
     path: "kimyo" ,
     image: Kimyo
   },
+  {
+    id: 5,
+    title: "Dasturchilar uchun",
+    path: "dasturlash",
+    image: developer,
+  }
 ]
 
 const Tasks = () => {

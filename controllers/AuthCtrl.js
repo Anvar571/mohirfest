@@ -3,11 +3,12 @@ const bcrypt = require("bcrypt");
 const Users = require("../models/UserModel");
 const Validation = require("../modules/validation");
 
+
 const AuthCtrl = {
     register: async (req,res) => {
         try {
             const {fullname, username, email, password, cf_pass} = req.body;
-            const newUserName = username.toLowerCase().replace(/ /g, "");
+            const newUserName = username.toLowerCase().replace(/ /g, " ");
 
             const user_name = await Users.findOne({username: newUserName});
             if (user_name) return res.status(400).json({msg: "this username already registered"})
@@ -114,6 +115,14 @@ const AuthCtrl = {
                 })
             });
 
+        } catch (error) {
+            return res.status(400).json({msg: error.message})
+        }
+    },
+    userLength: async (req, res) => {
+        try {
+            const resUser = await Users.find({}).select("username")
+            res.json(resUser)
         } catch (error) {
             return res.status(400).json({msg: error.message})
         }

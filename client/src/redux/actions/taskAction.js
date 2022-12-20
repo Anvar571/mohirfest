@@ -1,5 +1,5 @@
 import { GLOBAL_TYPES } from "./globalType"
-import {getDataAPI} from "../../utils/serverAPI";
+import {getDataAPI, postDataAPI} from "../../utils/serverAPI";
 
 export const TASK_TYPE = {
     GET_TASK:   "GET_TYPE",
@@ -7,11 +7,25 @@ export const TASK_TYPE = {
     CREATE_TASK:"CREATE_TASK",
 }
 
-export const createTask = () => async (dispatch) =>  {
+export const createTask = (data, token) => async (dispatch) =>  {
     try {
-        
+        const res= await postDataAPI("topshiriqlar/task", data, token);
+        dispatch({
+            type: TASK_TYPE.CREATE_TASK,
+            payload: res.data
+        })
+
+        dispatch({
+            type: GLOBAL_TYPES.ALERT,
+            payload: {
+                success: res.data.msg
+            }
+        })
     } catch (error) {
-        
+        dispatch({
+            type: GLOBAL_TYPES.ALERT,
+            payload: {error: error.response.data.msg}
+        })
     }
 }
 
