@@ -35,7 +35,6 @@ const task = [
 
 const Tasks = () => {
 
-
   return (
     <div className='tasks'>
       <div className='row'>

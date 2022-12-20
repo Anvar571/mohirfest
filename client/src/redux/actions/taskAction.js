@@ -39,18 +39,18 @@ export const getTask = (token) => async (dispatch) => {
     }
 }
 
-export const getByIdTask = (id, taskid, token) => async (dispatch) => {
-    try {
-        const res = await getDataAPI(`topshriqlar/${id}/${taskid}`, token)
-        dispatch({
-            type: TASK_TYPE.GET_TASK,
-            payload: {...res.data}
-        })
-        console.log(res);
-    } catch (error) {
-        dispatch({
-            type: GLOBAL_TYPES.ALERT,
-            payload: {error: error.response.data.msg}
-        })
-    }
-}
+// export const getByIdTask = (id, taskid, token) => async (dispatch) => {
+//     // try {
+//         const res = await getDataAPI(`topshriqlar/${id}/${taskid}`, token)
+//         dispatch({
+//             type: TASK_TYPE.GET_TASK,
+//             payload: res
+//         })
+//         // console.log(res);
+//     // } catch (error) {
+//         // dispatch({
+//         //     type: GLOBAL_TYPES.ALERT,
+//         //     payload: {error: error.response.data.msg}
+//         // })
+//     }
+// // }

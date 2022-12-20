@@ -6,8 +6,6 @@ import { getByIdTask } from '../../../redux/actions/taskAction';
 const TaskOne = ({ id }) => {
   const { tasks } = useSelector(state => state);
 
-  
-
   return (
     <div>
       <div className='text-center'>
