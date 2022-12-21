@@ -1,4 +1,4 @@
-# mohirfest xakaton
+# Mohirfest xakaton 2022
 ![alt mohirfest](https://mohirdev.uz/wp-content/uploads/photo_2022-06-20_12-16-20.jpg)
 
 ## Ta'lim sifatini oshirish
