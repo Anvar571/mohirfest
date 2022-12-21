@@ -11,4 +11,12 @@
    yechib olsa bo'ladi
 ```
 ### loyihaning bosh sahifasi
-![alt homepage](https://drive.google.com/file/d/13x5pp-vwAdGDYcXhzyXNdci8RYdC383M/view?usp=share_link)
+![alt homepage]([https://drive.google.com/file/d/13x5pp-vwAdGDYcXhzyXNdci8RYdC383M/view?usp=share_link](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-38-58_cudr3x.png))
+
+### Loyihaning asosiy qismlari
+![alt mainpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-05_jwv16j.png)
+<hr/>
+![alt mainpage]([https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-05_jwv16j.png](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-13_locsvf.png))
+<hr/>
+![alt mainpage]([https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-05_jwv16j.png](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-19_bt5ooe.png))
+<hr/>
