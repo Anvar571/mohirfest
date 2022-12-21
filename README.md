@@ -17,9 +17,9 @@
 - Topshiriqlar
 ![alt mainpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-05_jwv16j.png))
 <hr/>
--- yo'nalish bo'yicha topshiriq
-![alt mainpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-13_locsvf.png)
+-yo'nalish bo'yicha topshiriq
+![alt taskpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-13_locsvf.png)
 <hr/>
---- topshirqni bajarish qismi
-![alt mainpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-19_bt5ooe.png)
+- topshirqni bajarish qismi
+![alt onetaskpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-19_bt5ooe.png)
 <hr/>
