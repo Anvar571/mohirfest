@@ -65,7 +65,7 @@ const CreateTask = () => {
                     </div>
                 </div>
                 {
-                    (title.length === 0 && content.length === 0 && ball.length === 0) ? "" :
+                    (title.length === 0 || content.length === 0 || ball.length === 0) ? "" :
                         <button onClick={handleBtn} type="submit"
                             className="btn btn-success">
                                 Add task
