@@ -18,7 +18,7 @@
 ![alt mainpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-05_jwv16j.png)
 <hr/>
 
--yo'nalish bo'yicha topshiriq
+- yo'nalish bo'yicha topshiriq
 ![alt taskpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-13_locsvf.png)
 <hr/>
 
