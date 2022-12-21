@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState } from 'react';
 import { BsSearch } from "react-icons/bs";
 import '../../styles/home.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from 'react-redux';
+import {useDispatch} from "react-redux";
+import { searchTasks } from '../../redux/actions/searchAction';
 
 function WelcomeUser(props) {
      return <span>{props.name}</span>;
@@ -11,10 +13,22 @@ function WelcomeUser(props) {
 
 const Header = () => {
      const { auth } = useSelector(state => state);
-     const [dateState, useDateState] = useState(new Date());
+     const [dateState] = useState(new Date());
+     const [search, setSearch] = useState('');
+     const dispatch = useDispatch();
+     const navigate = useNavigate();
+     const searchRef = useRef();
 
      const handleInnput = (e) => {
           e.preventDefault();
+          setSearch(e.target.value)
+     }
+
+     const handleSubmit = (e) => {
+          e.preventDefault();
+          dispatch(searchTasks(search, auth.token))
+          searchRef.current.reset()
+          navigate("/search")
      }
 
      return (
@@ -37,16 +51,16 @@ const Header = () => {
                          </span>
                     </div>
                     <div className="navSearchForm">
-                         <form className='' onSubmit={handleInnput}>
+                         <form action='/search' method='GET' onSubmit={handleSubmit} ref={searchRef}>
                               <div className="mySearchInput" style={{ position: "relative" }}>
-                                   <input className="myInput w-100 form-control" onChange={handleInnput}
+                                   <input className="myInput w-100 form-control"  onChange={handleInnput}
                                         type="text" placeholder="Search tasks" style={{ border: "1px solid #ddd" }} />
                                    <BsSearch style={{ position: "absolute", right: "10px", top: "10px" }} />
                               </div>
                          </form>
                     </div>
                     <div>
-                         <Link to="/profile" style={{ textDecoration: "none" }}>
+                         <Link to="/profile" style={{ textDecoration: "none" }}> 
                               <span className="profileName d-none d-sm-none d-md-inline" style={{ color: "#000", paddingRight: "15px" }}>{auth.user.fullname}</span>
                               <img src={auth.user.avatar} alt="User Avatar" width="50" height="50"
                               style={{borderRadius:"50%", objectFit:"cover"}} />

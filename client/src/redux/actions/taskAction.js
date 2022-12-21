@@ -7,6 +7,7 @@ export const TASK_TYPE = {
     CREATE_TASK:"CREATE_TASK",
 }
 
+// o'zgartirmang
 export const createTask = (data, token) => async (dispatch) =>  {
     try {
         const res= await postDataAPI("topshiriqlar/task", data, token);
@@ -29,12 +30,7 @@ export const createTask = (data, token) => async (dispatch) =>  {
     }
 }
 
-export const searchTask = () => async (dispatch) =>  {
-
-}
-
 export const updateTask = () => async (dispatch) =>  {
-
 }
 
 // o'zgartirmang

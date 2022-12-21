@@ -20,6 +20,7 @@ import { getTask } from "./redux/actions/taskAction";
 import PayPal from "./components/paypal/PayPal";
 import OneTaskUi from "./components/topshiriq/Yo'nalishlar/OneTaskUi";
 import CreateTask from "./components/topshiriq/Yo'nalishlar/CreateTask";
+import Search from "./components/header/Search";
 
 function App() {
   const { auth } = useSelector(state => state);
@@ -56,6 +57,8 @@ function App() {
               <Route path="/topshiriqlar/task" element={<CreateTask/>}/>
               <Route path="/topshiriqlar/:id" element={<Yonalish />} />
               <Route path="/topshiriqlar/:id/:taskid" element={<OneTaskUi/>}/>
+              <Route path="/search" element={<Search/>}/>
+
               <Route path="/yangiliklar" element={<NewsPage />} />
               <Route path="/maslahatlar" element={<MaslahatlarPage />} />
               <Route path="/profile" element={<ProfilePage />} />
