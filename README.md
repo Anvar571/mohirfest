@@ -11,10 +11,15 @@
    yechib olsa bo'ladi
 ```
 ### loyihaning bosh sahifasi
-![alt homepage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-38-58_cudr3x.png))
+![alt homepage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-38-58_cudr3x.png)
 
-### Loyihaning asosiy qismlari
+## Loyihaning asosiy qismlari
+- Topshiriqlar
 ![alt mainpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-05_jwv16j.png))
 <hr/>
+-- yo'nalish bo'yicha topshiriq
 ![alt mainpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-13_locsvf.png)
+<hr/>
+--- topshirqni bajarish qismi
+![alt mainpage](https://res.cloudinary.com/dpg1r5zfp/image/upload/v1671616035/socialmediaapp/Screenshot_from_2022-12-21_14-39-19_bt5ooe.png)
 <hr/>
