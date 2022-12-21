@@ -58,7 +58,7 @@ const TaskCrtl = {
     searchTask: async(req, res) => {
         try {
             const task = await TaskModel.find({title: {$regex: req.query.title}})
-            .select("title ball")
+            .select("title ball category content")
            
             res.status(200).json({
                 task
