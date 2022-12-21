@@ -10,3 +10,5 @@
    ball to'playdi va shu ballarini pull qilib olish imkoniyati beriladi hohlagan vaqtida 
    yechib olsa bo'ladi
 ```
+### loyihaning bosh sahifasi
+![alt homepage](https://drive.google.com/file/d/13x5pp-vwAdGDYcXhzyXNdci8RYdC383M/view?usp=share_link)
